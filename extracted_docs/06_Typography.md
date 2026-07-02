@@ -1,0 +1,3 @@
+# Typography
+
+Poppins and Inter.

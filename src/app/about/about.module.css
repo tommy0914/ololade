@@ -1,0 +1,131 @@
+.headerSection {
+  padding: 80px 24px 40px 24px;
+  text-align: center;
+}
+
+.title {
+  font-family: var(--font-display);
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 16px;
+  letter-spacing: -1px;
+}
+
+.subtitle {
+  font-size: 18px;
+  color: var(--text-secondary);
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+.storySection {
+  padding: 60px 0;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 64px;
+  align-items: center;
+}
+
+.contentCol {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.sectionHeader {
+  font-size: 28px;
+  font-weight: 600;
+  color: var(--text-white);
+  margin-bottom: 8px;
+  font-family: var(--font-display);
+}
+
+.text {
+  font-size: 15px;
+  line-height: 1.8;
+  color: var(--text-secondary);
+}
+
+.highlightText {
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--text-primary);
+  border-left: 3px solid var(--accent);
+  padding-left: 16px;
+  line-height: 1.6;
+}
+
+.statsGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  margin-top: 16px;
+}
+
+.statCard {
+  padding: 24px;
+  text-align: center;
+  border-radius: 12px;
+}
+
+.statNumber {
+  font-family: var(--font-display);
+  font-size: 32px;
+  font-weight: 700;
+  color: var(--accent);
+  margin-bottom: 4px;
+}
+
+.statLabel {
+  font-size: 12px;
+  color: var(--text-secondary);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.imagePlaceholder {
+  height: 400px;
+  background: linear-gradient(135deg, #1c1c1e 0%, #0d0d0e 100%);
+  border: 1px solid var(--border-color);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+  text-align: center;
+  gap: 16px;
+  color: var(--text-secondary);
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background-color: rgba(48, 209, 88, 0.1);
+  color: var(--success);
+  font-size: 13px;
+  font-weight: 500;
+  padding: 6px 12px;
+  border-radius: 99px;
+  border: 1px solid rgba(48, 209, 88, 0.2);
+}
+
+@media (max-width: 900px) {
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  
+  .imagePlaceholder {
+    height: 300px;
+  }
+  
+  .title {
+    font-size: 36px;
+  }
+}
