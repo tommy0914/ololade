@@ -15,7 +15,7 @@
 **Files:**
 - Modify: `src/app/globals.css`
 
-- [ ] **Step 1: Replace :root custom properties in globals.css**
+- [x] **Step 1: Replace :root custom properties in globals.css**
 
 Update `src/app/globals.css` from line 3 to 40 to define the new slate background, green accents, and glow variables.
 
@@ -60,7 +60,7 @@ Update `src/app/globals.css` from line 3 to 40 to define the new slate backgroun
 }
 ```
 
-- [ ] **Step 2: Add digital circuit grid and glow keyframe definitions**
+- [x] **Step 2: Add digital circuit grid and glow keyframe definitions**
 
 Add the following animations and global background styling utility code at the end of `src/app/globals.css`.
 
@@ -103,7 +103,7 @@ Add the following animations and global background styling utility code at the e
 }
 ```
 
-- [ ] **Step 3: Verify style compilation**
+- [x] **Step 3: Verify style compilation**
 
 Run a next lint check command to make sure there are no errors in our styling definitions.
 
@@ -118,7 +118,7 @@ Expected: Done without errors.
 - Modify: `src/components/Navbar.module.css`
 - Modify: `src/components/Footer.module.css`
 
-- [ ] **Step 1: Refine Navbar styling module**
+- [x] **Step 1: Refine Navbar styling module**
 
 Modify `src/components/Navbar.module.css` to update the background blur and transition to the green theme.
 
@@ -173,7 +173,7 @@ Modify `src/components/Navbar.module.css` to update the background blur and tran
 }
 ```
 
-- [ ] **Step 2: Refine Footer styling module**
+- [x] **Step 2: Refine Footer styling module**
 
 Open `src/components/Footer.module.css` and update the borders and links colors to inherit the lime green accent colors.
 
@@ -198,7 +198,7 @@ Open `src/components/Footer.module.css` and update the borders and links colors 
 }
 ```
 
-- [ ] **Step 3: Run Next compilation to verify shell components build successfully**
+- [x] **Step 3: Run Next compilation to verify shell components build successfully**
 
 Run: `npm run build --webpack`
 Expected: Next build succeeds.
@@ -211,7 +211,7 @@ Expected: Next build succeeds.
 - Modify: `src/app/page.tsx`
 - Modify: `src/app/page.module.css`
 
-- [ ] **Step 1: Update Homepage Main elements with circuit background & scanline overlays**
+- [x] **Step 1: Update Homepage Main elements with circuit background & scanline overlays**
 
 Edit `src/app/page.tsx` and add classes `tech-grid-bg` and styling elements on the sections.
 
@@ -247,7 +247,7 @@ Update `src/app/page.module.css` to implement the custom grid backgrounds and am
 }
 ```
 
-- [ ] **Step 2: Modify Interactive Device Selector Active states & brackets**
+- [x] **Step 2: Modify Interactive Device Selector Active states & brackets**
 
 Update `src/app/page.tsx` selector display container. Apply corner brackets wrapper around the image showcase:
 
@@ -280,7 +280,7 @@ Update `src/app/page.tsx` selector display container. Apply corner brackets wrap
 </div>
 ```
 
-- [ ] **Step 3: Update CSS modules for device selector brackets and pulsing states**
+- [x] **Step 3: Update CSS modules for device selector brackets and pulsing states**
 
 Add the corner brackets and selector styling inside `src/app/page.module.css`:
 
@@ -349,7 +349,7 @@ Add the corner brackets and selector styling inside `src/app/page.module.css`:
 }
 ```
 
-- [ ] **Step 4: Update Video grid tech scanlines overlays**
+- [x] **Step 4: Update Video grid tech scanlines overlays**
 
 Modify `src/app/page.module.css` for video overlays to include tech-grade diagnostics overlays.
 
@@ -423,7 +423,7 @@ Modify `src/app/page.module.css` for video overlays to include tech-grade diagno
 - Modify: `src/app/services/services.module.css`
 - Modify: `src/app/contact/contact.module.css`
 
-- [ ] **Step 1: Refine About page styles**
+- [x] **Step 1: Refine About page styles**
 
 Edit `src/app/about/about.module.css` to update accent colors and glass border components:
 
@@ -443,7 +443,7 @@ Edit `src/app/about/about.module.css` to update accent colors and glass border c
 }
 ```
 
-- [ ] **Step 2: Refine Pricing table borders**
+- [x] **Step 2: Refine Pricing table borders**
 
 Edit `src/app/pricing/pricing.module.css` to apply lime green active glows:
 
@@ -455,7 +455,7 @@ Edit `src/app/pricing/pricing.module.css` to apply lime green active glows:
 }
 ```
 
-- [ ] **Step 3: Refine Services grid list items**
+- [x] **Step 3: Refine Services grid list items**
 
 Edit `src/app/services/services.module.css` to inherit green properties:
 
@@ -466,7 +466,7 @@ Edit `src/app/services/services.module.css` to inherit green properties:
 }
 ```
 
-- [ ] **Step 4: Refine Contact/Booking page form inputs**
+- [x] **Step 4: Refine Contact/Booking page form inputs**
 
 Edit `src/app/contact/contact.module.css` to update focuses to green:
 
@@ -482,7 +482,7 @@ Edit `src/app/contact/contact.module.css` to update focuses to green:
 
 ### Task 5: Final Validation & Build Verification
 
-- [ ] **Step 1: Compile application builder check**
+- [x] **Step 1: Compile application builder check**
 
 Run: `npm run build --webpack`
 Expected: Compile finishes successfully with no issues.
