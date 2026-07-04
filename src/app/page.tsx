@@ -116,12 +116,12 @@ export default function Home() {
   return (
     <div>
       {/* Hero Section */}
-      <section className={styles.hero}>
+      <section className={`${styles.hero} tech-grid-bg`}>
         <div className={styles.heroBackground} />
         <div className="container animate-fade-in">
           <p className={styles.heroTagline}>Certified Repairs, Sales & Trade-ins</p>
           <h1 className={styles.heroTitle}>
-            Your Smart Devices, <span className="text-gradient-blue">Upgraded & Restored</span>.
+            Your Smart Devices, <span className="text-gradient-green">Upgraded & Restored</span>.
           </h1>
           <p className={styles.heroSubtitle}>
             Premium multi-brand repair (iPhone & Android), certified pre-owned gadget sales, and instant phone swaps. Experience elite tech services built to uncompromising standards.
@@ -211,17 +211,11 @@ export default function Home() {
           <div className={styles.detailsWrapper}>
             {/* Real photos display based on dynamic selection */}
             <div className={styles.imagePlaceholder} style={{ background: "none", padding: 0 }}>
-              <div
-                style={{
-                  position: "relative",
-                  width: "100%",
-                  height: "100%",
-                  minHeight: "320px",
-                  borderRadius: "20px",
-                  border: "1px solid var(--border-color)",
-                  overflow: "hidden",
-                }}
-              >
+              <div className={styles.bracketContainer}>
+                <div className={styles.bracketTopLeft}></div>
+                <div className={styles.bracketTopRight}></div>
+                <div className={styles.bracketBottomLeft}></div>
+                <div className={styles.bracketBottomRight}></div>
                 <Image
                   src={getDisplayImage()}
                   alt={getDisplayLabel()}
@@ -230,23 +224,12 @@ export default function Home() {
                   sizes="(max-width: 768px) 100vw, 500px"
                   priority
                 />
-                {/* Gradient tint */}
-                <div
-                  style={{
-                    position: "absolute",
-                    bottom: 0,
-                    left: 0,
-                    width: "100%",
-                    padding: "20px",
-                    background: "linear-gradient(to top, rgba(0,0,0,0.85) 0%, rgba(0,0,0,0) 100%)",
-                    display: "flex",
-                    flexDirection: "column",
-                  }}
-                >
-                  <span style={{ fontSize: "11px", color: "var(--accent)", fontWeight: 700, textTransform: "uppercase", letterSpacing: "1px" }}>
+                <div className={styles.visualOverlayContainer}>
+                  <span className={styles.diagnosticLabel}>
+                    <span className="led-indicator" style={{ marginRight: '6px' }}></span>
                     Visual Condition Check
                   </span>
-                  <span style={{ fontSize: "14px", color: "var(--text-white)", fontWeight: 500 }}>
+                  <span className={styles.diagnosticValue}>
                     {getDisplayLabel()}
                   </span>
                 </div>

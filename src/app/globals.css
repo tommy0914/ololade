@@ -107,8 +107,8 @@ button, input, select, textarea {
   background-clip: text;
 }
 
-.text-gradient-blue {
-  background: linear-gradient(135deg, #2997ff 0%, #0071e3 100%);
+.text-gradient-green {
+  background: linear-gradient(135deg, #00ff66 0%, #39ff14 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
