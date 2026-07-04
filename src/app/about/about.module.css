@@ -70,10 +70,19 @@
   padding: 24px;
   text-align: center;
   border-radius: 12px;
+  border: 1px solid var(--border-color);
+  background: var(--bg-card);
+  backdrop-filter: var(--glass-blur);
+  transition: all 0.3s ease;
+}
+
+.statCard:hover {
+  border-color: var(--accent);
+  box-shadow: 0 0 12px rgba(57, 255, 20, 0.15);
 }
 
 .statNumber {
-  font-family: var(--font-display);
+  font-family: var(--font-sans);
   font-size: 32px;
   font-weight: 700;
   color: var(--accent);
@@ -89,7 +98,7 @@
 
 .imagePlaceholder {
   height: 400px;
-  background: linear-gradient(135deg, #1c1c1e 0%, #0d0d0e 100%);
+  background: linear-gradient(135deg, #090d16 0%, #030712 100%);
   border: 1px solid var(--border-color);
   border-radius: 20px;
   display: flex;
@@ -100,6 +109,13 @@
   text-align: center;
   gap: 16px;
   color: var(--text-secondary);
+  box-shadow: inset 0 0 20px rgba(57, 255, 20, 0.05);
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.imagePlaceholder:hover {
+  border-color: var(--accent);
+  box-shadow: 0 0 15px rgba(57, 255, 20, 0.12), inset 0 0 20px rgba(57, 255, 20, 0.05);
 }
 
 .badge {

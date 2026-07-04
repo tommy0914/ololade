@@ -47,7 +47,7 @@
   width: 56px;
   height: 56px;
   border-radius: 14px;
-  background-color: rgba(0, 113, 227, 0.1);
+  background-color: rgba(57, 255, 20, 0.08);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -116,4 +116,13 @@
   .title {
     font-size: 36px;
   }
+}
+
+.serviceCard {
+  transition: all 0.3s ease;
+}
+
+.serviceCard:hover {
+  border-color: var(--accent);
+  box-shadow: 0 0 15px rgba(57, 255, 20, 0.12);
 }
