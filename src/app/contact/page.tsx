@@ -237,12 +237,18 @@ export default function Contact() {
                 </div>
               </div>
 
-              {/* Map Mockup */}
-              <div className={styles.mapPlaceholder}>
-                <div style={{ textAlign: "center" }}>
-                  <MapPin size={32} style={{ color: "var(--accent)", marginBottom: "8px" }} />
-                  <span>Map: Cupertino Smart Device Lab</span>
-                </div>
+              {/* Map Embed */}
+              <div className={styles.mapPlaceholder} style={{ padding: 0, overflow: "hidden" }}>
+                <iframe
+                  src="https://maps.google.com/maps?q=Second%20Awa%20Hostel%2C%20Opposite%20Emily%20Hostel%2C%20Under%20G%2C%20Ogbomoso&t=&z=15&ie=UTF8&iwloc=&output=embed"
+                  width="100%"
+                  height="100%"
+                  style={{ border: 0 }}
+                  allowFullScreen={false}
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                  title="Second Awa Hostel Map"
+                ></iframe>
               </div>
             </div>
           </div>

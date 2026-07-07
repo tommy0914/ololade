@@ -130,6 +130,19 @@
   box-shadow: 0 0 12px rgba(57, 255, 20, 0.12);
 }
 
+.mapPlaceholder iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+  border-radius: 15px;
+  filter: grayscale(1) invert(0.9) contrast(1.2) opacity(0.85);
+  transition: all 0.3s ease;
+}
+
+.mapPlaceholder:hover iframe {
+  filter: grayscale(0) invert(0) contrast(1) opacity(1);
+}
+
 .successMessage {
   padding: 24px;
   background-color: rgba(48, 209, 88, 0.1);
