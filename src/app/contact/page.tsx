@@ -238,7 +238,7 @@ export default function Contact() {
               </div>
 
               {/* Map Embed */}
-              <div className={styles.mapPlaceholder} style={{ padding: 0, overflow: "hidden" }}>
+              <div className={styles.mapPlaceholder}>
                 <iframe
                   src="https://maps.google.com/maps?q=Second%20Awa%20Hostel%2C%20Opposite%20Emily%20Hostel%2C%20Under%20G%2C%20Ogbomoso&t=&z=15&ie=UTF8&iwloc=&output=embed"
                   width="100%"
