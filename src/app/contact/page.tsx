@@ -39,6 +39,7 @@ function BookingForm() {
     notes: "",
   });
   const [submitted, setSubmitted] = useState(false);
+  const [whatsappUrl, setWhatsappUrl] = useState("");
 
   useEffect(() => {
     const modelParam = searchParams.get("model");
@@ -54,7 +55,20 @@ function BookingForm() {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
+    const repairItem = REPAIRS.find((r) => r.id === formData.repair);
+    const inquiryType = repairItem ? repairItem.name : formData.repair;
+    const message = `*New Service Booking / Quote Request*
+
+*Name:* ${formData.name}
+*Email:* ${formData.email}
+*Device:* ${formData.model}
+*Inquiry Type:* ${inquiryType}
+*Details/Notes:* ${formData.notes}`;
+
+    const url = `https://wa.me/2347071039523?text=${encodeURIComponent(message)}`;
+    setWhatsappUrl(url);
     setSubmitted(true);
+    window.open(url, "_blank", "noopener,noreferrer");
   };
 
   const isSwapTransaction = formData.repair === "swap";
@@ -67,8 +81,8 @@ function BookingForm() {
         <div className={styles.successMessage}>
           <CheckCircle size={24} style={{ flexShrink: 0 }} />
           <div>
-            <strong style={{ display: "block", marginBottom: "4px" }}>Request Submitted!</strong>
-            We have registered your details and will email you shortly with a personalized offer/schedule confirmation.
+            <strong style={{ display: "block", marginBottom: "4px" }}>Request Initiated!</strong>
+            We have opened WhatsApp to send your service request. If the chat did not open automatically, please <a href={whatsappUrl} target="_blank" rel="noopener noreferrer" style={{ textDecoration: "underline", color: "var(--accent)" }}>click here to open WhatsApp manually</a>.
           </div>
         </div>
       ) : (
