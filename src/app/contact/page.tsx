@@ -63,7 +63,7 @@ function BookingForm() {
 *Email:* ${formData.email}
 *Device:* ${formData.model}
 *Inquiry Type:* ${inquiryType}
-*Details/Notes:* ${formData.notes}`;
+*Details/Notes:* ${formData.notes || "None"}`;
 
     const url = `https://wa.me/2347071039523?text=${encodeURIComponent(message)}`;
     setWhatsappUrl(url);
